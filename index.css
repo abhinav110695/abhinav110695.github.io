@@ -1,0 +1,235 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(10,10,10);
+}
+
+#home_navbar{
+    border: 2px solid yellow;
+    color: white;
+    display: flex;
+    font-family: sans-serif;
+    position:sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#home_navbar>:nth-child(1){
+    display: flex;
+    font-size: 50px;
+    /* border: 1px solid blue; */
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+#home_navbar>:nth-child(2){
+    display: flex;
+    font-size: 20px;
+    /* border: 1px solid blue; */
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#home_name{
+    color: red;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+a:hover::after{
+    width: 100%;
+}
+
+#home_body{
+    width: 100%;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,500px);
+    gap: 100px 0px;
+ 
+}
+/* #home_body>div{
+    border: 1px solid yellow;
+} */
+
+section{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    border: 1px solid yellow;
+}
+
+#home_home>div{
+    width: 50%;
+    height: 100%;
+    border: 1px solid greenyellow;
+    color:white;
+}
+
+#home_about{
+    display: flex;
+    color: white;
+}
+#home_about>div:nth-child(1){
+    width: 35%;
+    height: 100%;
+    border: 1px solid greenyellow;
+
+}
+
+#home_about>div:nth-child(2){
+    width: 65%;
+    height: 100%;
+    border: 1px solid greenyellow;
+
+}
+#home_projects{
+    display: flex;
+    color: white;
+}
+
+#home_projects>div:nth-child(1){
+    width: 50%;
+    height: 100%;
+    border: 1px solid greenyellow;
+}
+#home_projects>div:nth-child(2){
+    width: 50%;
+    height: 100%;
+    border: 1px solid greenyellow;
+}
+
+#home_contact{
+    color: #fff;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    #home_body{
+        width: 100%;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,300px);
+        gap: 30px 0px;
+    }
+    section{
+        width: 95%;
+        height: 100%;
+        margin: auto;
+        border: 1px solid yellow;
+    }
+    #home_home>div{
+        width: 80%;
+        margin: auto;
+        height: 100%;
+        border: 1px solid greenyellow;
+        color:white;
+    }
+
+    #home_about{
+        display: block;
+        color: white;
+    }
+    #home_about>div:nth-child(1){
+        width: 80%;
+        height: 50%;
+        border: 1px solid greenyellow;
+        margin: auto;
+    }
+    
+    #home_about>div:nth-child(2){
+        width: 80%;
+        margin: auto;
+        height: 50%;
+        border: 1px solid greenyellow;
+    
+    }
+    #home_projects{
+        display: block;
+        color: white;
+    }
+    
+    #home_projects>div:nth-child(1){
+        width: 80%;
+        height: 50%;
+        margin: auto;
+        border: 1px solid greenyellow;
+    }
+    #home_projects>div:nth-child(2){
+        width: 80%;
+        height: 50%;
+        margin: auto;
+        border: 1px solid greenyellow;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px){
+    section{
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        border: 1px solid yellow;
+    }
+    #home_home>div{
+        width: 60%;
+        height: 100%;
+        border: 1px solid greenyellow;
+        color:white;
+    }
+
+    #home_about{
+        display: block;
+        color: white;
+    }
+    #home_about>div:nth-child(1){
+        width: 45%;
+        height: 50%;
+        border: 1px solid greenyellow;
+        margin: auto;
+    }
+    
+    #home_about>div:nth-child(2){
+        width: 85%;
+        margin: auto;
+        height: 50%;
+        border: 1px solid greenyellow;
+    
+    }
+    #home_projects{
+        display: block;
+        color: white;
+    }
+    
+    #home_projects>div:nth-child(1){
+        width: 80%;
+        height: 50%;
+        margin: auto;
+        border: 1px solid greenyellow;
+    }
+    #home_projects>div:nth-child(2){
+        width: 80%;
+        height: 50%;
+        margin: auto;
+        border: 1px solid greenyellow;
+    }
+}
