@@ -391,21 +391,23 @@ header .follow a:hover{
     display: flex;
     flex-wrap: wrap;
     gap:1.5rem;
+    
 }
 
 .portfolio .box-container .box{
     flex:1 1 30rem;
-    height:25rem;
+    height:450px;
     position: relative;
     overflow:hidden;
     border:1rem solid #fff;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     background:#fff;
     border-radius: .5rem;
+    padding: 20px;
 }
 
 .portfolio .box-container .box img{
-    height:100%;
+    height:50%;
     width:100%;
     object-fit: cover;
     border-radius: .5rem;
@@ -413,40 +415,24 @@ header .follow a:hover{
     z-index: 1;
 }
 
-.portfolio .box-container .box:hover img{
-    height:100%;
-    width:100%;
+.portfolio .box-container .box img:hover{
+    transform: scale(0.9);
+ 
 }
 
-.portfolio .box-container .box h3{
-    position: absolute;
-    bottom:.5rem; left:1rem;
-    font-size: 2.5rem;
+.portfolio .box-container .box h2{
+    font-size: 20px;
     color:#333;
     text-transform: uppercase;
 }
 
-.portfolio .box-container .box .icons{
-    position: absolute;
-    top:1rem; right:1rem;
+.portfolio .box-container .box h1{
+    font-size: 18px;
 }
 
-.portfolio .box-container .box .icons a{
-    display: block;
-    height:4rem;
-    width:4rem;
-    border-radius: .5rem;
-    background: #eee;
-    color:#333;
-    font-size: 1.7rem;
-    line-height: 4rem;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.portfolio .box-container .box .icons a:hover{
-    background:var(--main-color);
-    color:#fff;
+#abc{
+    margin-left: 45%;
+    margin-right: 10px;
 }
 
 .contact .icons-container{
