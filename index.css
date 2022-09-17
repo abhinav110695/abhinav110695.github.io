@@ -223,6 +223,7 @@ header .follow a:hover{
     border:1rem solid Rgb(195,201,191);
     border-radius: 10px;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    
 }
 
 .about .row-1 .content{
@@ -294,9 +295,7 @@ header .follow a:hover{
     padding-top: .5rem;
 }
 
-#ex{
-    margin-top: 5%;
-}
+
 
 .experience .box-container{
 
@@ -349,22 +348,29 @@ header .follow a:hover{
     color:#666;
 }
 
+
+#project_h1{
+    font-size: 25px;
+    color: #105068;
+    
+}
+
 .portfolio .box-container{
     display: flex;
     flex-wrap: wrap;
-    gap:1.5rem;
+    gap:0px 5%;
     
 }
 
 .portfolio .box-container .box{
     flex:1 1 30rem;
-    height:500px;
+    height:70%;
     position: relative;
     overflow:hidden;
     border:1rem solid #fff;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     background:#fff;
-    border-radius: .5rem;
+    border-radius: 20px;
     padding: 20px;
 }
 
@@ -384,12 +390,13 @@ header .follow a:hover{
 
 .portfolio .box-container .box h2{
     font-size: 20px;
-    color:#333;
+    color:#105068;;
     text-transform: uppercase;
 }
 
 .portfolio .box-container .box h1{
     font-size: 18px;
+    color: #105068;
 }
 
 #abc{
@@ -398,8 +405,10 @@ header .follow a:hover{
 }
 
 .contact .icons-container{
-    display: flex;
-    gap:1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(auto,auto);
+    gap:50px;
     flex-wrap: wrap;
     padding-bottom: 2rem;
 }
@@ -433,6 +442,7 @@ header .follow a:hover{
 .contact .icons-container .icons p{
     color:#666;
     font-size: 1.7rem;
+    text-transform: none;
 }
 
 .contact .row{
@@ -556,38 +566,39 @@ header .follow a:hover{
     flex:1 1 30rem;
     text-align: center;
     padding:2rem;
-    background:#fff;
+    
     border-radius: .5rem;
     box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
     height: 20rem;
     overflow: hidden;
+    
 }
 
 .service .box-container .box img{
-    width: 90%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
     
 }
 
 .service .box-container .box img{
     /* transform: scale(1.1) rotate(15deg); */
     /* transition: width 2s ease, height 2s ease; */
-    animation: zoominoutsinglefeatured 6s infinite ;
+    animation: zoominoutsinglefeatured 7s infinite ;
     
 }
 
 
 @keyframes zoominoutsinglefeatured {
     0% {
-        transform: scale(0.9,0.9)  rotate(-5deg);
+        transform: scale(0.95,0.95)  rotate(0deg);
         
     }
     50% {
-        transform: scale(1.06,1.06) rotate(5deg);
+        transform: scale(1.06,1.06) rotate(0deg);
         
     }
     100% {
-        transform: scale(0.9,0.9) rotate(-5deg);
+        transform: scale(0.95,0.95) rotate(0deg);
         
     }
 }
@@ -699,28 +710,149 @@ header .follow a:hover{
 .about .row-2 .skills:nth-child(4) .progress:nth-child(2) .bar span{
     width:85%;
 }
-/* .skills{
-    animation-name: example;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-  }
-@keyframes example{
-    0%{
-      background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png");
-    }
-    25%{
-      background-image: url("https://d1.awsstatic.com/asset-repository/products/amazon-rds/1024px-MySQL.ff87215b43fd7292af172e2a5d9b844217262571.png");
-    }
-    50%{
-      background-image: url("https://pbs.twimg.com/profile_images/1235868806079057921/fTL08u_H_400x400.png");
-    }
-    75%{
-      background-image: url("");
-    }
-    100%{
-      background-image: url("");
-    }
- }
-   */
 
-   
+
+#roundbar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 6%;
+}
+#calender{
+    margin-bottom: 30px;
+}
+#aaa{
+    color: #fff;
+}
+
+
+
+#inc {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: conic-gradient(rgb(52, 255, 248) var(--progress), gray 0deg);
+    font-size: 0;
+    animation: 2s  ease-out turn_in reverse; 
+  }
+  
+  #inc::after {
+    content: attr(data-progress);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
+    border-radius: 50%;
+    background:rgb(5, 33, 50);
+    font-size: 17px;
+    text-align: center;
+    color: white;
+  }
+  
+  @keyframes turn_in {
+    5% {
+      background: conic-gradient(rgb(172, 255, 40) calc(var(--progress) * .95), gray 0deg);
+    }
+    10% {
+      background: conic-gradient(rgb(172, 255, 40) calc(var(--progress) * .9), gray 0deg);
+    }
+    15% {
+      background: conic-gradient(rgb(172, 255, 40)calc(var(--progress) * .85), gray 0deg);
+    }
+    20% {
+      background: conic-gradient(rgb(172, 255, 40) calc(var(--progress) * .8), gray 0deg);
+    }
+    25% {
+      background: conic-gradient(rgb(172, 255, 40)calc(var(--progress) * .75), gray 0deg);
+    }
+    30% {
+      background: conic-gradient(rgb(255, 192, 75) calc(var(--progress) * .7), gray 0deg);
+    }
+    35% {
+      background: conic-gradient(rgb(255, 192, 75) calc(var(--progress) * .65), gray 0deg);
+    }
+    40% {
+      background: conic-gradient(rgb(255, 192, 75) calc(var(--progress) * .6), gray 0deg);
+    }
+    45% {
+      background: conic-gradient(rgb(255, 192, 75) calc(var(--progress) * .55), gray 0deg);
+    }
+    50% {
+      background: conic-gradient(rgb(255, 192, 75) calc(var(--progress) * .5), gray 0deg);
+    }
+    55% {
+      background: conic-gradient(rgb(255, 192, 75) calc(var(--progress) * .45), gray 0deg);
+    }
+    60% {
+      background: conic-gradient(rgb(255, 255, 124) calc(var(--progress) * .4), gray 0deg);
+    }
+    65% {
+      background: conic-gradient(rgb(255, 255, 124) calc(var(--progress) * .35), gray 0deg);
+    }
+    70% {
+      background: conic-gradient(rgb(255, 255, 124) calc(var(--progress) * 0.3), gray 0deg);
+    }
+    75% {
+      background: conic-gradient(rgb(255, 255, 124)  calc(var(--progress) * 0.25), gray 0deg);
+    }
+    80% {
+      background: conic-gradient(rgb(255, 255, 124)  calc(var(--progress) * .2), gray 0deg);
+      }
+    85% {
+      background: conic-gradient(red calc(var(--progress) * .15), gray 0deg);
+      }
+    90% {
+        background: conic-gradient(red calc(var(--progress) * .1), gray 0deg);
+      }
+    95% {
+        background: conic-gradient(red calc(var(--progress) * .05), gray 0deg);
+      }
+  100% {
+      background: conic-gradient(gray 0deg);
+    }
+  }
+
+.contrib-number{
+    color: Rgb(52,255,248);
+    font-size: 30px;
+}
+.text-muted{
+    color: white;
+    font-size: 15px;
+}
+
+
+
+/* #container {
+    
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    border: 1px solid #000;
+    position: relative;
+    border-radius: 50%;
+    animation: spin 10s linear infinite;
+    margin-top: 20%;
+  }
+  .item {
+    width: 100px;
+    height: 100px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    animation: spin 10s linear infinite reverse;
+  }
+  .item img{
+    width: 100%;
+    height: 100%;
+  }
+  @keyframes spin {
+    100% {
+      transform: rotate(1turn);
+      
+    }
+  } 
+  */
