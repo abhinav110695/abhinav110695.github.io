@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root{
-    --main-color:#c5fc1f;
+    --main-color:#58eeff;
 }
 
 *{
@@ -54,13 +54,14 @@ section{
     color:rgb(0, 0, 0);
     cursor: pointer;
     font-size: 1.7rem;
+    border-radius: 5px;
 }
 
 .btn:hover{
-    background:rgb(10, 9, 9);
+    background:rgb(195,201,191);
     letter-spacing: .2rem;
-    color: var(--main-color);
-    border:3px solid #c5fc1f;
+    color: black;
+    border:2px solid black;
 }
 
 header{
@@ -99,7 +100,7 @@ header .navbar a{
 
 header .navbar a:hover{
     letter-spacing: .2rem;
-    color: #c5fc1f;
+    color: var(--main-color);
 }
 
 header .follow a{
@@ -109,7 +110,7 @@ header .follow a{
 }
 
 header .follow a:hover{
-    color:#c5fc1f;
+    color:var(--main-color);
 }
 
 #menu-bars{
@@ -351,7 +352,7 @@ header .follow a:hover{
 
 #project_h1{
     font-size: 25px;
-    color: #105068;
+    color: var(--main-color);
     
 }
 
@@ -367,9 +368,11 @@ header .follow a:hover{
     height:70%;
     position: relative;
     overflow:hidden;
-    border:1rem solid #fff;
+    border:1px solid #fff;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    background:#fff;
+    /* background:#fff; */
+    background: rgba(76, 165, 175, 0.3);
+
     border-radius: 20px;
     padding: 20px;
 }
@@ -378,7 +381,7 @@ header .follow a:hover{
     height:50%;
     width:100%;
     object-fit: cover;
-    border-radius: .5rem;
+    border-radius: 1rem;
     position: relative;
     z-index: 1;
 }
@@ -390,13 +393,15 @@ header .follow a:hover{
 
 .portfolio .box-container .box h2{
     font-size: 20px;
-    color:#105068;;
+    /* color:#105068; */
+    color: #fff;
     text-transform: uppercase;
 }
 
 .portfolio .box-container .box h1{
     font-size: 18px;
-    color: #105068;
+    /* color: #105068; */
+    color: #fff;
 }
 
 #abc{
@@ -417,9 +422,15 @@ header .follow a:hover{
     flex:1 1 25rem;
     text-align: center;
     padding:2rem;
-    background:#fff;
+    /* background:#fff; */
+    background: rgba(76, 165, 175, 0.3);
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    border-radius: .5rem;
+    border-radius: 5rem;
+}
+
+
+.contact .icons-container .icons:hover{
+    background-color: #555;
 }
 
 .contact .icons-container .icons i{
@@ -428,19 +439,19 @@ header .follow a:hover{
     line-height: 5rem;
     font-size: 2rem;
     background: var(--main-color);
-    color:#fff;
+    color: #555;;
     border-radius: 50%;
 }
 
 .contact .icons-container .icons h3{
-    color:#111;
+    color:#fff;
     font-size: 2rem;
     padding:.5rem 0;
     padding-top: 1rem;
 }
 
 .contact .icons-container .icons p{
-    color:#666;
+    color:rgb(255, 255, 255);
     font-size: 1.7rem;
     text-transform: none;
 }
