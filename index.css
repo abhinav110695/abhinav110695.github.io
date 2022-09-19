@@ -167,11 +167,14 @@ header .follow a:hover{
 }
 
 .home .image{
-    flex:1 1 40rem;
+    flex:1 1 60rem;
 }
 
 .home .image img{
-    width:100%;
+    width:80%;
+    /* height: 100%; */
+    border-radius: 50%;
+    border: 5px solid rgb(23, 81, 120);
 }
 
 .home .content{
@@ -537,7 +540,12 @@ header .follow a:hover{
         left:0%;
     }
 
-    
+    .calender{
+        width: 95%;
+    }
+    .js-calendar-graph-svg{
+        width: 95%;
+    }
 
 }
 
@@ -555,6 +563,12 @@ header .follow a:hover{
         padding-right: 0;
     }
 
+    .calender{
+        width: 100%;
+    }
+    .js-calendar-graph-svg{
+        width: 600;
+    }
 }
 
 #hi{
