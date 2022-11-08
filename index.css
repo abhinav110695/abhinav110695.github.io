@@ -217,7 +217,9 @@ header .follow a:hover{
 }
 
 .about .row-1 .image{
-    flex:1 1 25rem;
+    width: 30%;
+    height: 50%;
+    margin: auto;
 }
 
 .about .row-1 .image img{
@@ -517,59 +519,7 @@ header .follow a:hover{
 
 
 
-/* media queries  */
-@media (max-width:800px){
 
-    html{
-        font-size: 55%;
-    }
-    
-    body{
-        padding: 0;
-    }
-
-    #menu-bars{
-        display: initial;
-    }
-
-    header{
-        left:-120%;
-    }
-
-    header.active{
-        left:0%;
-    }
-
-    .calender{
-        width: 95%;
-    }
-    .js-calendar-graph-svg{
-        width: 95%;
-    }
-
-}
-
-@media (max-width:450px){
-
-    html{
-        font-size: 50%;
-    }
-
-    header{
-        width:100%;
-    }
-
-    .experience .box-container .box{
-        padding-right: 0;
-    }
-
-    .calender{
-        width: 100%;
-    }
-    .js-calendar-graph-svg{
-        width: 600;
-    }
-}
 
 #hi{
     font-size: 30px;
@@ -853,10 +803,155 @@ header .follow a:hover{
    margin-left: 5%;
 }
 
+#stats_git img{
+    width: 45%;
+    height: 40%;
+}
+
+
+#abt_head{
+    margin-bottom: 5%;
+}
+
+/* media queries  */
+@media (max-width:1000px){
+
+    html{
+        font-size: 55%;
+    }
+    
+    body{
+        padding-left: 5%;
+        padding-right: -8%;
+    }
+
+    #menu-bars{
+        display: initial;
+    }
+
+    header{
+        left:-120%;
+    }
+
+    header.active{
+        left:0%;
+    }
+
+    .calender{
+        width: 95%;
+    }
+    .js-calendar-graph-svg{
+        width: 95%;
+    }
+
+    .about .row-1 .image{
+        width: 25%;
+        height: 40%;
+        margin: auto;
+    } 
+
+    .about .row-1 .image img{
+        height: 80%;
+        width:80%;
+        border:0.5rem solid Rgb(195,201,191);
+        border-radius: 10px;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        
+    }
+
+    .about .row-2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,auto);
+        flex-wrap: wrap;
+        gap:0px 20px;
+        align-items: center;
+    
+    }
+
+    #inc {
+        display: flex;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: conic-gradient(rgb(52, 255, 248) var(--progress), gray 0deg);
+        font-size: 0;
+        animation: 2s  ease-out turn_in reverse;
+        
+    }
+      #inc::after {
+        font-size: 13px; 
+    
+      }
+      .contrib-number{
+        color: Rgb(52,255,248);
+        font-size: 15px;
+    }
+    .text-muted{
+        color: white;
+        font-size: 10px;
+    }
+
+}
 
 
 
 
+@media (max-width:600px){
+
+    html{
+        width: 100%;
+        font-size: 50%;
+        display: grid;
+        justify-items: center;
+    }
+
+
+    header{
+        width:100%;
+    }
+
+    .experience .box-container .box{
+        padding-right: 0;
+    }
+
+    .calender{
+        width: 50%;
+    }
+    .js-calendar-graph-svg{
+        width: 300;
+    }
+
+    .about .row-2{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,auto);
+        flex-wrap: wrap;
+        gap:20px 20px;
+        align-items: center;
+    
+    }
+    .about .row-1 .image{
+        width: 35%;
+        height: 50%;
+        margin: auto;
+    } 
+
+    #inc {
+        display: flex;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: conic-gradient(rgb(52, 255, 248) var(--progress), gray 0deg);
+        font-size: 0;
+        animation: 2s  ease-out turn_in reverse;
+        
+    }
+      #inc::after {
+        font-size: 10px; 
+    
+      }
+}
 
 
 /* #container {
