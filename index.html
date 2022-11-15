@@ -18,20 +18,20 @@
 <body>
 
 
-<div id="menu-bars" class="fas fa-bars"></div>
+<!-- <div id="menu-bars" class="fas fa-bars"></div> -->
     
 <!-- header section starts  -->
 
-<header>
+<!-- <header> -->
 
-    <a href="#" class="logo"> <span>ABHINAV</span> SINGH</a>
+    <!-- <a href="#" class="logo"> <span>ABHINAV</span> SINGH</a>
 
     <div class="follow">
         <a href="https://linkedin.com/in/abhinav110695" class="fab fa-linkedin"></a>
         <a href="https://github.com/abhinav110695" class="fab fa-github"></a>
-    </div>
+    </div> -->
 
-    <nav class="navbar">
+    <!-- <nav class="navbar">
         <a href="#home">home</a>
         <a href="#about">about</a>
         <a href="#tech">tech stack</a>
@@ -40,10 +40,54 @@
         <a href="#portfolio">projects</a>
         <a href="#contact">contact</a>
         <a href="./images/Abhinav-Singh-Resume.pdf" >resume</a>
-    </nav>
+    </nav> -->
 
+    <div class="hero">
 
-</header>
+		<div class="row" id="nav">
+            <nav class="nav" role="navigation">
+	  
+                <h3 class="logo" id="change">A-<<span>/>-S</span></h3>
+                <ul class="nav__items" id="SideBar">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+            
+                    <li class="nav__item">
+                        <a href="#tech" class="nav__link">Tech Stack</a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">Statistics</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="./images/Abhinav-Singh-Resume.pdf" title="Download Resume" class="nav__link">Resume</a>
+                    </li>
+                    
+            
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav> </div>
+
+	</div>
+    <script src="https://kit.fontawesome.com/69a6c41ebd.js" crossorigin="anonymous"></script>
+<!-- </header> -->
 
 <!-- header section ends -->
 
@@ -59,7 +103,7 @@
     </div>
 
     <div class="image">
-        <!-- <img src="./images/pictue.jpeg" alt="" > -->
+        <img src="https://www.mywebworld.in/wp-content/uploads/2018/05/web-design-kerala.gif" alt="" >
     </div>
 
 </section>
@@ -148,29 +192,6 @@
 </section>
 
 
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-<script>
-    var radius = 250; // adjust to move out items in and out 
-var fields = $('.item'),
-  container = $('#container'),
-  width = container.width(),
-  height = container.height();
-var angle = 0,
-  step = (2 * Math.PI ) / fields.length;
-fields.each(function() {
-  var x = Math.round(width / 2 + radius * Math.cos(angle) - $(this).width() / 2);
-  var y = Math.round(height / 2 + radius * Math.sin(angle) - $(this).height() / 2);
-  if (window.console) {
-    console.log($(this).text(), x, y);
-  }
-  $(this).css({
-    left: x + 'px',
-    top: y + 'px'
-  });
-  angle += step;
-});
-</script> -->
 
 
 <section class="about" id="skills">
@@ -363,6 +384,22 @@ GitHubCalendar(".calendar", "abhinav110695");
     <div class="box-container">
 
         <div class="box">
+            <h1 id="project_h1">BUS RESERVATION SYSTEM PORTAL</h1>
+            <a href=""><img src="./images/logoproject.png" alt=""></a>
+            <h1>Online Bus Reservation Spring data JPA application</h1>
+            <h2>
+                </span>Tech Stack <br>
+                <span>&#10003;</span> SPRING DATA JPA <br>
+                <span>&#10003;</span> MYSQL <br>
+                <span>&#10003;</span> SPRING BOOT - HIBERNATE
+            </h2>
+            <a href="https://github.com/owaisshassan/golden-oven-671" class="btn" id="abc">github</a>
+            <a href="https://drive.google.com/file/d/1DlQU35WwIHuaSQJSAJOXEwtYgrY2WU7Y/view?usp=sharing" class="btn">video</a>
+            
+           
+        </div>
+
+        <div class="box">
             <h1 id="project_h1">ANTHROPOLOGIE</h1>
             <a href="https://anthropologie-1.netlify.app/index.html"><img src="./images/anthropologie.png" alt=""></a> 
             <h1>Anthropologie is women clothing E-commerce website</h1>
@@ -385,7 +422,7 @@ GitHubCalendar(".calendar", "abhinav110695");
                 </span>Tech Stack <br>
                 <span>&#10003;</span> HTML <br>
                 <span>&#10003;</span> CSS advance <br>
-                <span>&#10003;</span> JAVASCRIPT es6 with json-db
+                <span>&#10003;</span> JAVASCRIPT - json-db
             </h2>
             <a href="https://github.com/abhinav110695/silly-authority-4051" class="btn" id="abc">github</a>
             <a href="https://licious-omega.vercel.app/" class="btn">go live</a>
